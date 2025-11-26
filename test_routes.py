@@ -187,6 +187,10 @@ class TestRoutes(unittest.TestCase):
         self.assertIsNotNone(inv)
         
         # Check Amount (Should be BASE rate)
+        print(f"DEBUG: Customer ID: {c_id}")
+        print(f"DEBUG: Customer Rate: {c.rate}")
+        print(f"DEBUG: Invoice Amount: {inv.amount}")
+        print(f"DEBUG: Invoice Customer ID: {inv.customer_id}")
         self.assertEqual(inv.amount, 500.0)
         
         # Check Email Body (Should be TOTAL: 500 + 50 = 550)
