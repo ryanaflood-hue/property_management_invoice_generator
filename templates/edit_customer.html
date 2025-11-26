@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header">
+  <h1>Edit Customer</h1>
+</div>
+
+<div class="card" style="max-width: 800px; margin: 0 auto;">
+  <form method="post">
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" name="name" value="{{ customer.name }}" required>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email"
+          value="{% if customer.email and customer.email != 'change@me.com' %}{{ customer.email }}{% endif %}">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Property Address</label>
+      <input type="text" name="property_address" value="{{ customer.property_address }}" required>
+    </div>
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label>City</label>
+        <input type="text" name="property_city" value="{{ customer.property_city or '' }}">
+      </div>
+      <div class="form-group">
+        <label>State</label>
+        <input type="text" name="property_state" value="{{ customer.property_state or '' }}">
+      </div>
+      <div class="form-group">
+        <label>Zip Code</label>
+        <input type="text" name="property_zip" value="{{ customer.property_zip or '' }}">
+      </div>
+    </div>
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Fee Type</label>
+        <select name="fee_type">
+          {% for ft in fee_types %}
+          <option value="{{ ft.name }}" {% if customer.fee_type==ft.name %}selected{% endif %}>{{ ft.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Fee Rate ($)</label>
+        <input type="number" step="0.01" name="rate" value="{{ customer.rate }}" required>
+      </div>
+    </div>
+
+    <!-- Fee 2 Section -->
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Fee 2 Type (Optional)</label>
+        <select name="fee_2_type">
+          <option value="">-- None --</option>
+          {% for ft in fee_types %}
+          <option value="{{ ft.name }}" {% if customer.fee_2_type==ft.name %}selected{% endif %}>{{ ft.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Fee 2 Rate ($)</label>
+        <input type="number" step="0.01" name="fee_2_rate" value="{{ customer.fee_2_rate or '' }}" placeholder="0.00">
+      </div>
+    </div>
+
+    <!-- Fee 3 Section -->
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Fee 3 Type (Optional)</label>
+        <select name="fee_3_type">
+          <option value="">-- None --</option>
+          {% for ft in fee_types %}
+          <option value="{{ ft.name }}" {% if customer.fee_3_type==ft.name %}selected{% endif %}>{{ ft.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Fee 3 Rate ($)</label>
+        <input type="number" step="0.01" name="fee_3_rate" value="{{ customer.fee_3_rate or '' }}" placeholder="0.00">
+      </div>
+    </div>
+
+    <!-- Additional Fee Section -->
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Additional Fee Description (Optional)</label>
+        <input type="text" name="additional_fee_desc" value="{{ customer.additional_fee_desc or '' }}"
+          placeholder="e.g., Late Fee">
+      </div>
+      <div class="form-group">
+        <label>Additional Fee Amount ($)</label>
+        <input type="number" step="0.01" name="additional_fee_amount" value="{{ customer.additional_fee_amount or '' }}"
+          placeholder="0.00">
+      </div>
+    </div>
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Billing Cadence</label>
+        <select name="cadence">
+          <option value="monthly" {% if customer.cadence=='monthly' %}selected{% endif %}>Monthly</option>
+          <option value="quarterly" {% if customer.cadence=='quarterly' %}selected{% endif %}>Quarterly</option>
+          <option value="yearly" {% if customer.cadence=='yearly' %}selected{% endif %}>Yearly</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Next Bill Date</label>
+        <input type="date" name="next_bill_date" value="{{ customer.next_bill_date }}" required>
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <a href="{{ url_for('list_customers') }}" class="btn btn-secondary">Cancel</a>
+      <button type="submit" class="btn btn-primary">Save Changes</button>
+    </div>
+  </form>
+
+  <div style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+    <form action="{{ url_for('delete_customer', customer_id=customer.id) }}" method="post"
+      onsubmit="return confirm('Are you sure you want to delete this customer? Their invoices will be preserved.');">
+      <button type="submit" class="btn btn-danger">Delete Customer</button>
+    </form>
+  </div>
+</div>
+
+<!-- Additional Properties Section -->
+<div class="card" style="max-width: 800px; margin: 2rem auto;">
+  <h2>Additional Properties</h2>
+
+  {% if customer.properties %}
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+        <th>Fee ($)</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for prop in customer.properties %}
+      <tr>
+        <td>{{ prop.address }}</td>
+        <td>{{ prop.city }}</td>
+        <td>{{ prop.state }}</td>
+        <td>{{ prop.zip_code }}</td>
+        <td>{% if prop.fee_amount %}${{ "%.2f"|format(prop.fee_amount) }}{% else %}-{% endif %}</td>
+        <td>
+          <form action="{{ url_for('delete_property', customer_id=customer.id, property_id=prop.id) }}" method="post"
+            onsubmit="return confirm('Delete this property?');" style="display:inline;">
+            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p style="color: var(--text-secondary); font-style: italic;">No additional properties.</p>
+  {% endif %}
+
+  <h3 style="margin-top: 1.5rem; font-size: 1.1rem;">Add Property</h3>
+  <form action="{{ url_for('add_property', customer_id=customer.id) }}" method="post">
+    <div class="form-group">
+      <input type="text" name="address" placeholder="Address" required>
+    </div>
+    <div class="form-grid">
+      <input type="text" name="city" placeholder="City">
+      <input type="text" name="state" placeholder="State">
+      <input type="text" name="zip_code" placeholder="Zip Code">
+      <input type="number" step="0.01" name="fee_amount" placeholder="Fee Amount ($)">
+    </div>
+    <div style="margin-top: 1rem;">
+      <button type="submit" class="btn btn-secondary">Add Property</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
