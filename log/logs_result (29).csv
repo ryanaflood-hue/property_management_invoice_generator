@@ -1,0 +1,359 @@
+"TimeUTC","timestampInMs","requestPath","requestMethod","requestQueryString","responseStatusCode","requestId","requestUserAgent","level","environment","branch","vercelCache","type","function","host","deploymentDomain","deploymentId","durationMs","region","maxMemoryUsed","memorySize","message","projectId","traceId","sessionId","invocationId","instanceId","concurrency"
+"2025-11-26 22:42:08",1764196928375,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.png","GET","",-1,"7zh4x-1764196926256-0e2dd7b531e9","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB159GTN36HHB55W02JDJ6RN","",-1
+"2025-11-26 22:42:06",1764196926293,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.png","GET","",500,"7zh4x-1764196926256-0e2dd7b531e9","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",2063,"iad1",110,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB159GTN36HHB55W02JDJ6RN","",1
+"2025-11-26 22:42:04",1764196924170,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.png","GET","",-1,"6rwtf-1764196922086-176f44b9a22b","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB159CRJGNSKF2N9CTYFSC2J","",-1
+"2025-11-26 22:42:02",1764196922129,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.png","GET","",500,"6rwtf-1764196922086-176f44b9a22b","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",2026,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB159CRJGNSKF2N9CTYFSC2J","",1
+"2025-11-26 22:42:01",1764196921035,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.png","GET","",-1,"924ph-1764196919039-14d84f27cfc7","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB1599S6AVWRTA8YCDHAJM8W","",-1
+"2025-11-26 22:41:59",1764196919078,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.png","GET","",500,"924ph-1764196919039-14d84f27cfc7","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1942,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB1599S6AVWRTA8YCDHAJM8W","",1
+"2025-11-26 22:41:59",1764196919000,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.ico","GET","",-1,"j7s77-1764196916998-d99fb0dd8d91","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB1597SFPPJ9GVS5JGD8CN1M","",-1
+"2025-11-26 22:41:57",1764196917038,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.ico","GET","",500,"j7s77-1764196916998-d99fb0dd8d91","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1945,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB1597SFPPJ9GVS5JGD8CN1M","",1
+"2025-11-26 22:41:54",1764196914911,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.ico","GET","",-1,"vbfgr-1764196912908-3cec3279e2c9","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB1593SK0TSYJHWFVB9080ZJ","",-1
+"2025-11-26 22:41:52",1764196912947,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.ico","GET","",500,"vbfgr-1764196912908-3cec3279e2c9","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1946,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB1593SK0TSYJHWFVB9080ZJ","",1
+"2025-11-26 22:41:52",1764196912675,"floodproperty-management-invoice-ge.vercel.app/favicon.ico","GET","",-1,"gf7z6-1764196910694-40dc4ee88d1d","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-ge.vercel.app","floodproperty-management-invoice-ge.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB1591N5BNJDZEY3T5Q5B6JC","",-1
+"2025-11-26 22:41:51",1764196911837,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.ico","GET","",-1,"gjx5h-1764196909958-b9947a1c0b5a","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB1590XFX65H9H7X57HW6SWB","",-1
+"2025-11-26 22:41:50",1764196910757,"floodproperty-management-invoice-ge.vercel.app/favicon.ico","GET","",500,"gf7z6-1764196910694-40dc4ee88d1d","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-ge.vercel.app","floodproperty-management-invoice-ge.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1901,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB1591N5BNJDZEY3T5Q5B6JC","",1
+"2025-11-26 22:41:50",1764196910096,"floodproperty-management-invoice-ge.vercel.app/","GET","",-1,"tfjvr-1764196907947-1cebc8c5bc0c","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-ge.vercel.app","floodproperty-management-invoice-ge.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158Z44F7ENA8CCWW66Z2E1","",-1
+"2025-11-26 22:41:49",1764196909999,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.ico","GET","",500,"gjx5h-1764196909958-b9947a1c0b5a","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1825,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB1590XFX65H9H7X57HW6SWB","",1
+"2025-11-26 22:41:49",1764196909800,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",-1,"kmcbn-1764196907932-c5a4b834b07a","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158YY7VNSK8Q70VWPN8D3E","",-1
+"2025-11-26 22:41:48",1764196908164,"floodproperty-management-invoice-ge.vercel.app/","GET","",500,"tfjvr-1764196907947-1cebc8c5bc0c","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-ge.vercel.app","floodproperty-management-invoice-ge.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1912,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158Z44F7ENA8CCWW66Z2E1","",1
+"2025-11-26 22:41:48",1764196908076,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.ico","GET","",-1,"595k7-1764196906062-f37e65064497","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158X3QPEMBWZBQQZCFW1TC","",-1
+"2025-11-26 22:41:47",1764196907976,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.ico","GET","",-1,"lns74-1764196906127-65bb5c2233a8","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158X5PC6EHK5CF7XCEGW9Q","",-1
+"2025-11-26 22:41:47",1764196907975,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",500,"kmcbn-1764196907932-c5a4b834b07a","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1808,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158YY7VNSK8Q70VWPN8D3E","",1
+"2025-11-26 22:41:46",1764196906848,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",-1,"74gcx-1764196904933-fa952b7a3383","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158W0B97689541R2WDS1FM","",-1
+"2025-11-26 22:41:46",1764196906166,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.ico","GET","",500,"lns74-1764196906127-65bb5c2233a8","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1793,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158X5PC6EHK5CF7XCEGW9Q","",1
+"2025-11-26 22:41:46",1764196906103,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/favicon.ico","GET","",500,"595k7-1764196906062-f37e65064497","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1952,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158X3QPEMBWZBQQZCFW1TC","",1
+"2025-11-26 22:41:46",1764196906023,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",-1,"czqlg-1764196903993-d70a924958ef","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158V31V23W1Q0XAZKYR8DC","",-1
+"2025-11-26 22:41:45",1764196905986,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",-1,"rvblf-1764196904022-38c85e707046","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158V3Y1F32RVSHVEQ9JAHX","",-1
+"2025-11-26 22:41:45",1764196905853,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",-1,"8527h-1764196901414-72aa4e06921d","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158RN3T455F9TSS4A0CYM6","",-1
+"2025-11-26 22:41:45",1764196905807,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",-1,"2lg74-1764196901387-b88b01c1d807","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158RN45MXQGZVJSMVVWS4P","",-1
+"2025-11-26 22:41:44",1764196904971,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",500,"74gcx-1764196904933-fa952b7a3383","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1853,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158W0B97689541R2WDS1FM","",1
+"2025-11-26 22:41:44",1764196904746,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",-1,"6jgqq-1764196900599-ce660bb51010","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158QW5WD3TJEMEM99VMMCG","",-1
+"2025-11-26 22:41:44",1764196904673,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",-1,"rvqg7-1764196899959-7dfb8f5e7a0c","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158QBJ3Q8R9MF5J6WP6EJP","",-1
+"2025-11-26 22:41:44",1764196904595,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",-1,"sxd5s-1764196899924-d33d21645b8c","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158QBK21S312273Z1MBSH4","",-1
+"2025-11-26 22:41:44",1764196904186,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",-1,"5r6wd-1764196900319-69a3181005ed","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",-1,"iad1",-1,-1,"Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Error importing app.py:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 11, in <module>
+from invoice_generator import generate_invoice_for_customer, get_invoice_templates, generate_invoice_with_template, generate_invoice_buffer, get_period_label
+File ""/var/task/invoice_generator.py"", line 13, in <module>
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+File ""<frozen os>"", line 225, in makedirs
+OSError: [Errno 30] Read-only file system: '/var/task/generated_invoices'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158QGF1F4YQHA34PT5TNVJ","",-1
+"2025-11-26 22:41:44",1764196904062,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",500,"rvblf-1764196904022-38c85e707046","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1792,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158V3Y1F32RVSHVEQ9JAHX","",1
+"2025-11-26 22:41:44",1764196904033,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",500,"czqlg-1764196903993-d70a924958ef","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1973,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158V31V23W1Q0XAZKYR8DC","",1
+"2025-11-26 22:41:41",1764196901540,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",500,"2lg74-1764196901387-b88b01c1d807","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1975,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158RN45MXQGZVJSMVVWS4P","",1
+"2025-11-26 22:41:41",1764196901539,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",500,"8527h-1764196901414-72aa4e06921d","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1999,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158RN3T455F9TSS4A0CYM6","",1
+"2025-11-26 22:41:40",1764196900741,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",500,"6jgqq-1764196900599-ce660bb51010","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1855,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158QW5WD3TJEMEM99VMMCG","",1
+"2025-11-26 22:41:40",1764196900367,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",500,"5r6wd-1764196900319-69a3181005ed","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",1751,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158QGF1F4YQHA34PT5TNVJ","",1
+"2025-11-26 22:41:40",1764196900211,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",500,"sxd5s-1764196899924-d33d21645b8c","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",2036,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158QBK21S312273Z1MBSH4","",1
+"2025-11-26 22:41:40",1764196900210,"floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app/","GET","",500,"rvqg7-1764196899959-7dfb8f5e7a0c","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","floodproperty-management-invoice-generator-kbr8p4ckm.vercel.app","dpl_6CY8eooDQuqEdQEka6VwnzrYw7Q5",2083,"iad1",111,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KB158QBJ3Q8R9MF5J6WP6EJP","",1

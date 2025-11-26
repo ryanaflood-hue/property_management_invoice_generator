@@ -9,6 +9,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_DIR = os.path.join(BASE_DIR, "invoice_templates")
 TEMPLATE_PATH = os.path.join(TEMPLATE_DIR, "base_invoice_template.docx")
 OUTPUT_DIR = os.path.join(BASE_DIR, "generated_invoices")
+if os.environ.get("VERCEL") or os.environ.get("AWS_LAMBDA_FUNCTION_NAME"):
+    OUTPUT_DIR = "/tmp"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
