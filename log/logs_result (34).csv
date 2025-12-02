@@ -1,0 +1,673 @@
+"TimeUTC","timestampInMs","requestPath","requestMethod","requestQueryString","responseStatusCode","requestId","requestUserAgent","level","environment","branch","vercelCache","type","function","host","deploymentDomain","deploymentId","durationMs","region","maxMemoryUsed","memorySize","message","projectId","traceId","sessionId","invocationId","instanceId","concurrency"
+"2025-12-02 01:58:39",1764640719821,"floodproperty-management-invoice-ge.vercel.app/favicon.ico","GET","",-1,"6jz8s-1764640717650-3e3d9bf542ef","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-ge.vercel.app","floodproperty-management-invoice-ge.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGYWQTCKX09J6B7DXDW0D","",-1
+"2025-12-02 01:58:37",1764640717719,"floodproperty-management-invoice-ge.vercel.app/favicon.ico","GET","",500,"6jz8s-1764640717650-3e3d9bf542ef","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-ge.vercel.app","floodproperty-management-invoice-ge.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",2089,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGYWQTCKX09J6B7DXDW0D","",1
+"2025-12-02 01:58:37",1764640717056,"floodproperty-management-invoice-ge.vercel.app/","GET","",-1,"rn692-1764640714731-8e43a08e541f","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-ge.vercel.app","floodproperty-management-invoice-ge.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGW3E7YBD0YBSRTC0B01X","",-1
+"2025-12-02 01:58:35",1764640715767,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",-1,"5nzch-1764640713634-7cedf195fbfa","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGTYE1PMG8ZV6Y2B34S8X","",-1
+"2025-12-02 01:58:34",1764640714862,"floodproperty-management-invoice-ge.vercel.app/","GET","",500,"rn692-1764640714731-8e43a08e541f","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-ge.vercel.app","floodproperty-management-invoice-ge.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",2175,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGW3E7YBD0YBSRTC0B01X","",1
+"2025-12-02 01:58:34",1764640714176,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/favicon.ico","GET","",-1,"8tljg-1764640712072-03bdd283d916","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGSDF9JT12BGJD2434RVC","",-1
+"2025-12-02 01:58:34",1764640714107,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/favicon.ico","GET","",-1,"tkxfr-1764640712078-bcf1ee09d892","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGSDPQCCSJSJTJ7F9BFF7","",-1
+"2025-12-02 01:58:33",1764640713678,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",500,"5nzch-1764640713634-7cedf195fbfa","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",2070,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGTYE1PMG8ZV6Y2B34S8X","",1
+"2025-12-02 01:58:32",1764640712540,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",-1,"jnq6k-1764640710414-a035b288b2ad","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGQSPQJ78CSCV2MR4QEH0","",-1
+"2025-12-02 01:58:32",1764640712532,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",-1,"x2cxf-1764640710440-ee79e0c69c53","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGQTNZ6TSVQ77J0TJ8RYM","",-1
+"2025-12-02 01:58:32",1764640712529,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",-1,"z7ftc-1764640710637-735319188621","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGR3TXT99AD9MV4XNR78C","",-1
+"2025-12-02 01:58:32",1764640712118,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/favicon.ico","GET","",500,"tkxfr-1764640712078-bcf1ee09d892","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",1974,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGSDPQCCSJSJTJ7F9BFF7","",1
+"2025-12-02 01:58:32",1764640712111,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/favicon.ico","GET","",500,"8tljg-1764640712072-03bdd283d916","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",2051,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGSDF9JT12BGJD2434RVC","",1
+"2025-12-02 01:58:32",1764640712005,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",-1,"4m5mp-1764640709820-b010c419b7ef","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGQ75YV2M4MVRQJWNDHTJ","",-1
+"2025-12-02 01:58:31",1764640711993,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",-1,"4q2dl-1764640709869-7e42be143dd0","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGQBMW0XB8JYRGHA055KQ","",-1
+"2025-12-02 01:58:30",1764640710778,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",500,"z7ftc-1764640710637-735319188621","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",1727,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGR3TXT99AD9MV4XNR78C","",1
+"2025-12-02 01:58:30",1764640710485,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",500,"x2cxf-1764640710440-ee79e0c69c53","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",2034,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGQTNZ6TSVQ77J0TJ8RYM","",1
+"2025-12-02 01:58:30",1764640710454,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",500,"jnq6k-1764640710414-a035b288b2ad","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",2071,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGQSPQJ78CSCV2MR4QEH0","",1
+"2025-12-02 01:58:30",1764640710368,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",-1,"mscf7-1764640705769-17c46da2bb05","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGK8V8EE8MT2KTA7GJ6AF","",-1
+"2025-12-02 01:58:30",1764640710355,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",-1,"52rb8-1764640705671-f9acc4c7cd82","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGK8V8EE8MT2KT90Q0F8N","",-1
+"2025-12-02 01:58:30",1764640710004,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",500,"4q2dl-1764640709869-7e42be143dd0","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",1972,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGQBMW0XB8JYRGHA055KQ","",1
+"2025-12-02 01:58:29",1764640709945,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",-1,"kv9k5-1764640705459-a5907b11ef27","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGK5Z000GNWHFNMEN55N2","",-1
+"2025-12-02 01:58:29",1764640709861,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",500,"4m5mp-1764640709820-b010c419b7ef","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",2124,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGQ75YV2M4MVRQJWNDHTJ","",1
+"2025-12-02 01:58:29",1764640709739,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",-1,"wtv88-1764640705723-b388adfbb91d","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",-1,"iad1",-1,-1,"nit__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+DEBUG: Available Environment Keys: ['AWS_ACCESS_KEY_ID', 'AWS_DEFAULT_REGION', 'AWS_REGION', 'AWS_SECRET_ACCESS_KEY', 'AWS_SESSION_TOKEN', 'LANG', 'LD_LIBRARY_PATH', 'NOW_REGION', 'NX_DAEMON', 'PATH', 'POSTRES_DATABASE_URL', 'POSTRES_DATABASE_URL_UNPOOLED', 'POSTRES_NEON_PROJECT_ID', 'POSTRES_PGDATABASE', 'POSTRES_PGHOST', 'POSTRES_PGHOST_UNPOOLED', 'POSTRES_PGPASSWORD', 'POSTRES_PGUSER', 'POSTRES_POSTGRES_DATABASE', 'POSTRES_POSTGRES_HOST', 'POSTRES_POSTGRES_PASSWORD', 'POSTRES_POSTGRES_PRISMA_URL', 'POSTRES_POSTGRES_URL', 'POSTRES_POSTGRES_URL_NON_POOLING', 'POSTRES_POSTGRES_URL_NO_SSL', 'POSTRES_POSTGRES_USER', 'PWD', 'PYTHONPATH', 'SHLVL', 'TURBO_CACHE', 'TURBO_DOWNLOAD_LOCAL_ENABLED', 'TURBO_PLATFORM_ENV', 'TURBO_REMOTE_ONLY', 'TURBO_RUN_SUMMARY', 'TZ', 'VERCEL', 'VERCEL_BRANCH_URL', 'VERCEL_CACHE_HANDLER_MEMORY_CACHE', 'VERCEL_DEPLOYMENT_ID', 'VERCEL_ENV', 'VERCEL_FLUID', 'VERCEL_GIT_COMMIT_AUTHOR_LOGIN', 'VERCEL_GIT_COMMIT_AUTHOR_NAME', 'VERCEL_GIT_COMMIT_MESSAGE', 'VERCEL_GIT_COMMIT_REF', 'VERCEL_GIT_COMMIT_SHA', 'VERCEL_GIT_PREVIOUS_SHA', 'VERCEL_GIT_PROVIDER', 'VERCEL_GIT_PULL_REQUEST_ID', 'VERCEL_GIT_REPO_ID', 'VERCEL_GIT_REPO_OWNER', 'VERCEL_GIT_REPO_SLUG', 'VERCEL_HANDLER', 'VERCEL_IPC_PATH', 'VERCEL_PARENT_SPAN_ID', 'VERCEL_PROJECT_ID', 'VERCEL_PROJECT_NAME', 'VERCEL_PROJECT_PRODUCTION_URL', 'VERCEL_REGION', 'VERCEL_TARGET_ENV', 'VERCEL_URL', 'VERCEL_VDC_REMOTE_CACHE_ENABLED', 'LC_CTYPE']
+DEBUG: Selected Database URL starts with: sqlite
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGKA3RKB0ZMGGRDQNP8XG","",-1
+"2025-12-02 01:58:25",1764640705858,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",500,"wtv88-1764640705723-b388adfbb91d","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",1778,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGKA3RKB0ZMGGRDQNP8XG","",1
+"2025-12-02 01:58:25",1764640705819,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",500,"mscf7-1764640705769-17c46da2bb05","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",2123,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGK8V8EE8MT2KTA7GJ6AF","",1
+"2025-12-02 01:58:25",1764640705819,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",500,"52rb8-1764640705671-f9acc4c7cd82","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",2014,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGK8V8EE8MT2KT90Q0F8N","",1
+"2025-12-02 01:58:25",1764640705727,"floodproperty-management-invoice-generator-ny3gihj6u.vercel.app/","GET","",500,"kv9k5-1764640705459-a5907b11ef27","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","floodproperty-management-invoice-generator-ny3gihj6u.vercel.app","dpl_5gLhHbZR3o6G1q1Crd2MF5sW5Y5H",1931,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBECGK5Z000GNWHFNMEN55N2","",1

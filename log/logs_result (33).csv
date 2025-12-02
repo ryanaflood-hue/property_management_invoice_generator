@@ -1,0 +1,901 @@
+"TimeUTC","timestampInMs","requestPath","requestMethod","requestQueryString","responseStatusCode","requestId","requestUserAgent","level","environment","branch","vercelCache","type","function","host","deploymentDomain","deploymentId","durationMs","region","maxMemoryUsed","memorySize","message","projectId","traceId","sessionId","invocationId","instanceId","concurrency"
+"2025-12-02 01:45:02",1764639902092,"floodproperty-management-invoice-ge.vercel.app/favicon.ico","GET","",-1,"qzzcw-1764639900362-166149dc4cdb","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-ge.vercel.app","floodproperty-management-invoice-ge.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",-1,"iad1",-1,-1,"alError: unable to open database file
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 589, in <module>
+init_db()
+File ""/var/task/models.py"", line 95, in init_db
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5928, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3251, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3241, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3277, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 145, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2440, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 143, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBR0RBPHEC6BA982Q1ZAQ0","",-1
+"2025-12-02 01:45:01",1764639901194,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",-1,"v6s62-1764639899145-ad80b15cf3ab","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",-1,"iad1",-1,-1,"alError: unable to open database file
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 589, in <module>
+init_db()
+File ""/var/task/models.py"", line 95, in init_db
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5928, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3251, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3241, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3277, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 145, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2440, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 143, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQZHGERG4B6VQVRS22DF4","",-1
+"2025-12-02 01:45:00",1764639900427,"floodproperty-management-invoice-ge.vercel.app/favicon.ico","GET","",500,"qzzcw-1764639900362-166149dc4cdb","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-ge.vercel.app","floodproperty-management-invoice-ge.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",1649,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBR0RBPHEC6BA982Q1ZAQ0","",1
+"2025-12-02 01:44:59",1764639899184,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",500,"v6s62-1764639899145-ad80b15cf3ab","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",1989,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQZHGERG4B6VQVRS22DF4","",1
+"2025-12-02 01:44:58",1764639898472,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/favicon.ico","GET","",-1,"5l6k6-1764639896478-70bd7566b89f","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",-1,"iad1",-1,-1,"alError: unable to open database file
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 589, in <module>
+init_db()
+File ""/var/task/models.py"", line 95, in init_db
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5928, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3251, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3241, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3277, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 145, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2440, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 143, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQWYWCF1P7RY6JS64SQAZ","",-1
+"2025-12-02 01:44:58",1764639898098,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",-1,"c5b6f-1764639896074-3b0ea1834d8e","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",-1,"iad1",-1,-1,"alError: unable to open database file
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 589, in <module>
+init_db()
+File ""/var/task/models.py"", line 95, in init_db
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5928, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3251, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3241, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3277, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 145, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2440, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 143, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQWHH7M769ZVX074MRDCJ","",-1
+"2025-12-02 01:44:58",1764639898006,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",-1,"7jsbx-1764639895853-1392547d453d","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",-1,"iad1",-1,-1,"alError: unable to open database file
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 589, in <module>
+init_db()
+File ""/var/task/models.py"", line 95, in init_db
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5928, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3251, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3241, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3277, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 145, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2440, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 143, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQWAP73K51S678DKE4JHB","",-1
+"2025-12-02 01:44:57",1764639897386,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/favicon.ico","GET","",-1,"xt8zm-1764639895734-5ebc4cbafd84","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",-1,"iad1",-1,-1,"alError: unable to open database file
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 589, in <module>
+init_db()
+File ""/var/task/models.py"", line 95, in init_db
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5928, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3251, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3241, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3277, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 145, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2440, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 143, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQW6XGTFVGF17K5E130MJ","",-1
+"2025-12-02 01:44:57",1764639897167,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",-1,"rbssx-1764639892734-ffe1b79ee19f","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",-1,"iad1",-1,-1,"alError: unable to open database file
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 589, in <module>
+init_db()
+File ""/var/task/models.py"", line 95, in init_db
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5928, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3251, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3241, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3277, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 145, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2440, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 143, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQSCK2YDBHBSKZ1JAVJ0Y","",-1
+"2025-12-02 01:44:56",1764639896540,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/favicon.ico","GET","",500,"5l6k6-1764639896478-70bd7566b89f","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",1916,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQWYWCF1P7RY6JS64SQAZ","",1
+"2025-12-02 01:44:56",1764639896389,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",-1,"kdgd7-1764639894272-d0ef6f63dac3","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",-1,"iad1",-1,-1,"alError: unable to open database file
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 589, in <module>
+init_db()
+File ""/var/task/models.py"", line 95, in init_db
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5928, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3251, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3241, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3277, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 145, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2440, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 143, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQTWQ6Q7SY40N8F3496P5","",-1
+"2025-12-02 01:44:56",1764639896112,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",500,"c5b6f-1764639896074-3b0ea1834d8e","vercel-favicon/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",1970,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQWHH7M769ZVX074MRDCJ","",1
+"2025-12-02 01:44:55",1764639895894,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",500,"7jsbx-1764639895853-1392547d453d","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",2090,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQWAP73K51S678DKE4JHB","",1
+"2025-12-02 01:44:55",1764639895773,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/favicon.ico","GET","",500,"xt8zm-1764639895734-5ebc4cbafd84","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",1596,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQW6XGTFVGF17K5E130MJ","",1
+"2025-12-02 01:44:55",1764639895661,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",-1,"l4dt4-1764639894027-838fe4e59494","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",-1,"iad1",-1,-1,"alError: unable to open database file
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 589, in <module>
+init_db()
+File ""/var/task/models.py"", line 95, in init_db
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5928, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3251, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3241, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3277, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 145, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2440, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 143, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQTHJ40H53Z2Y905S9PY0","",-1
+"2025-12-02 01:44:54",1764639894681,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",-1,"6nsbn-1764639890175-e86621300685","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",-1,"iad1",-1,-1,"alError: unable to open database file
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 589, in <module>
+init_db()
+File ""/var/task/models.py"", line 95, in init_db
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5928, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3251, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3241, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3277, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 145, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2440, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 143, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQPX08Z50PB6MC6F8165V","",-1
+"2025-12-02 01:44:54",1764639894562,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",-1,"f4djk-1764639889966-2f8f6cf5d83e","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",-1,"iad1",-1,-1,"alError: unable to open database file
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 589, in <module>
+init_db()
+File ""/var/task/models.py"", line 95, in init_db
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5928, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3251, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3241, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3277, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 145, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2440, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 143, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQPTGP8HK5M91F5QCB504","",-1
+"2025-12-02 01:44:54",1764639894423,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",500,"kdgd7-1764639894272-d0ef6f63dac3","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",1945,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQTWQ6Q7SY40N8F3496P5","",1
+"2025-12-02 01:44:54",1764639894066,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",500,"l4dt4-1764639894027-838fe4e59494","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",1578,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQTHJ40H53Z2Y905S9PY0","",1
+"2025-12-02 01:44:53",1764639893917,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",-1,"6bhmf-1764639890112-cac0bf6c78ea","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",-1,"iad1",-1,-1,"alError: unable to open database file
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 243, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/app.py"", line 589, in <module>
+init_db()
+File ""/var/task/models.py"", line 95, in init_db
+Base.metadata.create_all(bind=engine)
+File ""/var/task/_vendor/sqlalchemy/sql/schema.py"", line 5928, in create_all
+bind._run_ddl_visitor(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3251, in _run_ddl_visitor
+with self.begin() as conn:
+^^^^^^^^^^^^
+File ""/var/lang/lib/python3.12/contextlib.py"", line 137, in __enter__
+return next(self.gen)
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3241, in begin
+with self.connect() as conn:
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3277, in connect
+return self._connection_cls(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 145, in __init__
+Connection._handle_dbapi_exception_noconnection(
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 2440, in _handle_dbapi_exception_noconnection
+raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 143, in __init__
+self._dbapi_connection = engine.raw_connection()
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/base.py"", line 3301, in raw_connection
+return self.pool.connect()
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 447, in connect
+return _ConnectionFairy._checkout(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 1264, in _checkout
+fairy = _ConnectionRecord.checkout(pool)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 711, in checkout
+rec = pool._do_get()
+^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 177, in _do_get
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/impl.py"", line 175, in _do_get
+return self._create_connection()
+^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 388, in _create_connection
+return _ConnectionRecord(self)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 673, in __init__
+self.__connect()
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 899, in __connect
+with util.safe_reraise():
+^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/util/langhelpers.py"", line 224, in __exit__
+raise exc_value.with_traceback(exc_tb)
+File ""/var/task/_vendor/sqlalchemy/pool/base.py"", line 895, in __connect
+self.dbapi_connection = connection = pool._invoke_creator(self)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/create.py"", line 661, in connect
+return dialect.connect(*cargs, **cparams)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/_vendor/sqlalchemy/engine/default.py"", line 629, in connect
+return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQPTTFD088EE82CJ5TJZ7","",-1
+"2025-12-02 01:44:52",1764639892883,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",500,"rbssx-1764639892734-ffe1b79ee19f","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",1987,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQSCK2YDBHBSKZ1JAVJ0Y","",1
+"2025-12-02 01:44:50",1764639890336,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",500,"6nsbn-1764639890175-e86621300685","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",2031,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQPX08Z50PB6MC6F8165V","",1
+"2025-12-02 01:44:50",1764639890266,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",500,"6bhmf-1764639890112-cac0bf6c78ea","vercel-screenshot/1.0","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",1591,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQPTTFD088EE82CJ5TJZ7","",1
+"2025-12-02 01:44:50",1764639890256,"floodproperty-management-invoice-generator-ngwti4lpn.vercel.app/","GET","",500,"f4djk-1764639889966-2f8f6cf5d83e","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.0 Safari/537.36","error","production","master","","lambda","/app.py","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","floodproperty-management-invoice-generator-ngwti4lpn.vercel.app","dpl_FB22XS8BMjFyUU6SXHKa1FKZxsxh",1975,"iad1",112,2048,"","prj_TSIIm5uVptHRuMjv61b3xjJ1tZLR","","","01KBEBQPTGP8HK5M91F5QCB504","",1
