@@ -585,6 +585,16 @@ def toggle_invoice_status(invoice_id):
         session.close()
     return redirect(url_for("list_invoices"))
 
+from seed_data import seed_database
+
+@app.route("/seed")
+def seed_db_route():
+    try:
+        result = seed_database()
+        return result
+    except Exception as e:
+        return f"Error seeding database: {e}", 500
+
 # Initialize database when module is loaded (for gunicorn compatibility)
 init_db()
 

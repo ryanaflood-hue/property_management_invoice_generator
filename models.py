@@ -8,9 +8,7 @@ import os
 # Use DATABASE_URL if available (Vercel/Heroku), else local SQLite
 # Vercel Postgres uses POSTGRES_URL by default
 # Use DATABASE_URL if available (Vercel/Heroku), else local SQLite
-# Vercel Postgres uses POSTGRES_URL by default, but might be STORAGE_URL if default prefix was used
-print(f"DEBUG: Available Environment Keys: {[k for k in os.environ.keys()]}")
-
+# Vercel Postgres uses POSTGRES_URL by default
 database_url = (
     os.getenv("POSTGRES_URL") or 
     os.getenv("DATABASE_URL") or 
@@ -21,8 +19,6 @@ database_url = (
     os.getenv("POSTRES_POSTGRES_URL") or 
     "sqlite:///invoice_app_v2.db"
 )
-
-print(f"DEBUG: Selected Database URL starts with: {database_url.split('://')[0] if '://' in database_url else 'sqlite'}")
 
 if database_url.startswith("postgres://"):
     database_url = database_url.replace("postgres://", "postgresql://", 1)
