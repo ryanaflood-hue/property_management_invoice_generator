@@ -17,6 +17,8 @@ database_url = (
     os.getenv("POSTGRES_PRISMA_URL") or 
     os.getenv("POSTGRES_URL_NON_POOLING") or
     os.getenv("STORAGE_URL") or 
+    os.getenv("POSTRES_DATABASE_URL") or 
+    os.getenv("POSTRES_POSTGRES_URL") or 
     "sqlite:///invoice_app_v2.db"
 )
 
